@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Md Ali Jaffry - Senior Product Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    >
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .resume {
+            background-color: #fff;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-img {
+            max-width: 150px;
+            border-radius: 50%;
+            border: 3px solid #0d6efd;
+        }
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #0d6efd;
+        }
+        .title {
+            font-size: 1.2rem;
+            color: #777;
+        }
+        .contact-info i {
+            color: #0d6efd;
+            margin-right: 10px;
+        }
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            font-size: 1.75rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            color: #0d6efd;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #0d6efd;
+            bottom: 0;
+            left: 0;
+        }
+        .skills .badge {
+            margin: 5px 5px 5px 0;
+            font-size: 0.9rem;
+        }
+        .timeline {
+            position: relative;
+            list-style: none;
+            padding-left: 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #dee2e6;
+            top: 0;
+            bottom: 0;
+            left: 30px;
+            margin-left: -2px;
+        }
+        .timeline > li {
+            position: relative;
+            margin-bottom: 50px;
+            padding-left: 60px;
+        }
+        .timeline > li::before {
+            content: '\f0b1';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 20px;
+            top: 0;
+            font-size: 1rem;
+            color: #0d6efd;
+        }
+        .timeline h4 {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .timeline h5 {
+            font-size: 1rem;
+            color: #777;
+        }
+        .interests i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #0d6efd;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #777;
+        }
+        a {
+            color: #0d6efd;
+        }
+        a:hover {
+            color: #0a58ca;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        /* Dropdown Menu Styles */
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .dropdown-menu {
+            background-color: #0d6efd;
+        }
+        .navbar-nav .dropdown-item {
+            color: #fff;
+        }
+        .navbar-nav .dropdown-item:hover {
+            background-color: #0a58ca;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Md Ali Jaffry</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#professional-summary">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#core-competencies">Competencies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#it-skills">IT Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work-experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#languages">Languages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interests">Interests</a>
+            </li>
+            <!-- Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#personal-details">Personal Details</a></li>
+                <li><a class="dropdown-item" href="mailto:mjaffry02@gmail.com">Contact Me</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Resume Container -->
+    <div class="resume container">
+        <!-- Header -->
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+                <img src="profile-picture.jpg" alt="Md Ali Jaffry" class="profile-img img-fluid">
+            </div>
+            <div class="col-md-9">
+                <h1 class="name">Md Ali Jaffry</h1>
+                <p class="title">Senior Product Manager & Digital Transformation TechnoManager</p>
+                <!-- Contact Info -->
+                <p class="contact-info">
+                    <i class="fas fa-phone-alt"></i> +91 9810976296 &nbsp; | &nbsp;
+                    <i class="fas fa-envelope"></i> <a href="mailto:mjaffry02@gmail.com">mjaffry02@gmail.com</a> &nbsp; | &nbsp;
+                    <i class="fas fa-map-marker-alt"></i> Gurgaon, India
+                </p>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <h2 class="section-title" id="professional-summary"><i class="fas fa-user"></i> Professional Summary</h2>
+        <p>
+            Dynamic and accomplished Digital Transformation TechnoManager with over 15 years of experience in the IT sector, specializing in Microsoft .NET Development, Machine Learning, and Robotic Process Automation (RPA). Proven track record in driving digital transformation through innovative software solution architecture, project management, and team leadership. Skilled in aligning technology initiatives with business objectives, fostering collaboration, and empowering teams to achieve excellence.
+        </p>
+        <p>
+            Dedicated researcher driven by a passion for continuous learning and automation. Passionate team player with excellent communication skills, inspiring others to take on challenges and collaborate effectively.
+        </p>
+
+        <!-- Core Competencies -->
+        <h2 class="section-title" id="core-competencies"><i class="fas fa-cogs"></i> Core Competencies</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li>Digital Strategy Development and IT Leadership</li>
+                    <li>Project Management in Technology and Digital Initiatives</li>
+                    <li>Data Analytics and Solution Architecture in Healthcare, IT Infrastructure, and HRM</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Proficiency in Agile Methodology and Web Development</li>
+                    <li>Strong Team Leadership and Collaborative Skills</li>
+                    <li>Innovative Problem-Solving and Technology Integration</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- IT Skills -->
+        <h2 class="section-title" id="it-skills"><i class="fas fa-tools"></i> IT Skills</h2>
+        <div class="skills">
+            <!-- List all IT skills as badges -->
+            <!-- Add icons to some badges for visual enhancement -->
+            <span class="badge bg-primary"><i class="fab fa-microsoft"></i> Power Automate</span>
+            <span class="badge bg-secondary"><i class="fas fa-chart-bar"></i> Power BI</span>
+            <span class="badge bg-success">PowerAI</span>
+            <span class="badge bg-danger">Copilot</span>
+            <span class="badge bg-warning text-dark">ChatGPT Modeling</span>
+            <span class="badge bg-info text-dark">Gemini</span>
+            <span class="badge bg-dark"><i class="fab fa-adobe"></i> Adobe Creative Cloud</span>
+            <span class="badge bg-primary"><i class="fab fa-microsoft"></i> Office 365 Automation</span>
+            <span class="badge bg-secondary">Workflow Automation</span>
+            <span class="badge bg-success"><i class="fas fa-database"></i> SQL Server</span>
+            <span class="badge bg-danger"><i class="fas fa-database"></i> PostgreSQL</span>
+            <span class="badge bg-warning text-dark">.NET MAUI</span>
+            <span class="badge bg-info text-dark">RabbitMQ</span>
+            <span class="badge bg-dark"><i class="fab fa-docker"></i> Docker</span>
+            <span class="badge bg-primary">Kubernetes</span>
+            <span class="badge bg-secondary">UML</span>
+            <span class="badge bg-success"><i class="fas fa-project-diagram"></i> MS Visio</span>
+            <span class="badge bg-danger">Machine Learning</span>
+            <span class="badge bg-warning text-dark">.NET Core</span>
+            <span class="badge bg-info text-dark">C#</span>
+            <span class="badge bg-dark">Python</span>
+            <span class="badge bg-primary">JavaScript</span>
+            <span class="badge bg-secondary">TensorFlow</span>
+            <!-- Add more badges as needed -->
+        </div>
+
+        <!-- Work Experience -->
+        <h2 class="section-title" id="work-experience"><i class="fas fa-briefcase"></i> Work Experience</h2>
+        <ul class="timeline">
+            <!-- Job 1 -->
+            <li>
+                <h4><i class="fas fa-building"></i> Senior Architect in Microsoft Practice</h4>
+                <h5><i class="fas fa-calendar-alt"></i> Harbinger Group | Nov 2023 – June 2024</h5>
+                <p>
+                    <strong>Key Responsibilities:</strong>
+                    <ul>
+                        <li>Collaborated with the Center of Excellence and Pre-Sales teams to enhance conversion rates and partnered with Operations for portfolio development.</li>
+                        <li>Conducted audits on HRMS projects, led legacy modernization initiatives, and drove feature enhancements for healthcare projects.</li>
+                        <li>Managed project planning, estimation, and reporting, ensuring timely delivery and quality compliance.</li>
+                    </ul>
+                    <strong>Achievements:</strong>
+                    <ul>
+                        <li>Enhanced conversion rate by 30% through strategic collaboration.</li>
+                        <li>Led a legacy modernization project, resulting in a 20% reduction in operational costs and improved system performance.</li>
+                        <li>Implemented a new feature enhancement strategy, increasing customer satisfaction by 25%.</li>
+                    </ul>
+                    <strong>Technologies Used:</strong> .NET 8, .NET Web API, SQL Server, NUnit, xUnit, WCF, REST APIs, Elastic Search (AWS OpenSearch), MemCache, Power BI, SSIS, Azure DevOps, Veracode, SonarQube, Azure Cloud Services.
+                </p>
+            </li>
+            <!-- Job 2 -->
+            <li>
+                <h4><i class="fas fa-building"></i> Product Manager</h4>
+                <h5><i class="fas fa-calendar-alt"></i> Kroll Business Technology | Mar 2022 – Nov 2023</h5>
+                <p>
+                    <strong>Key Projects:</strong>
+                    <ul>
+                        <li><strong>Swift Conversion System with Power Automate Integration:</strong> Managed the development incorporating Power Automate for workflow automation alongside C#, Microservices, and S3 bucket.</li>
+                        <li><strong>Automated Financial Reporting Systems:</strong> Led the transformation integrating Power Automate with AWS Lambda, Python, C#, REST API, and PostgreSQL.</li>
+                        <li><strong>Reporting Pipeline Enhancement:</strong> Oversaw the enhancement utilizing Power Automate for efficient data flow management.</li>
+                        <li><strong>SharePoint System Automation:</strong> Directed the automation using Power Automate to improve collaboration and document management.</li>
+                        <li><strong>Legacy System Modernization:</strong> Led the modernization integrating Power Automate to optimize performance and functionality.</li>
+                    </ul>
+                    <strong>Achievements:</strong>
+                    <ul>
+                        <li>Successfully implemented Swift Conversion System, improving efficiency and accuracy in data processing.</li>
+                        <li>Automated reporting systems, reducing manual effort and improving data accuracy.</li>
+                        <li>Streamlined reporting pipeline, resulting in faster and more efficient processes.</li>
+                        <li>Enhanced collaboration and document management through SharePoint automation.</li>
+                        <li>Improved overall system performance and functionality by modernizing legacy systems.</li>
+                    </ul>
+                    <strong>Technologies Used:</strong> PostgreSQL, Power BI, Python, VBA, C#, RESTful API, Azure, AWS.
+                </p>
+            </li>
+            <!-- Job 3 -->
+            <li>
+                <h4><i class="fas fa-building"></i> Product Manager</h4>
+                <h5><i class="fas fa-calendar-alt"></i> Onextel Bulk SMS | Feb 2021 – Mar 2022</h5>
+                <p>
+                    <strong>Key Responsibilities:</strong>
+                    <ul>
+                        <li>Analyzed vast amounts of data from multiple sources, identifying key opportunities for cost savings, resulting in a significant 30% reduction.</li>
+                        <li>Led a team of 17 developers in designing and developing a commercial bulk SMS tool, employing parallel computing and microservices in Erlang.</li>
+                        <li>Integrated key notification protocols including SMTP, SMPP, FCM/APNs for seamless message delivery.</li>
+                        <li>Utilized Power BI and Qlik Sense for advanced data analysis and visualization.</li>
+                        <li>Applied unsupervised/supervised algorithms for data classification and clustering.</li>
+                        <li>Developed an automated testing system using Power Automate Screen Scraping.</li>
+                        <li>Created a CI/CD system using GitHub and Power Automate flow.</li>
+                    </ul>
+                    <strong>Technologies Used:</strong> Erlang, Power BI, Qlik Sense, Power Automate, GitHub.
+                </p>
+            </li>
+            <!-- Job 4 -->
+            <li>
+                <h4><i class="fas fa-building"></i> Infrastructure Automation Lead</h4>
+                <h5><i class="fas fa-calendar-alt"></i> DXC Technology | Feb 2007 – Feb 2021</h5>
+                <p>
+                    <strong>Significant Projects:</strong>
+                    <ul>
+                        <li>
+                            <strong>Human Resource Management (HRM) System:</strong> Revolutionized HR operations through a comprehensive system, enhancing efficiency and decision-making.
+                            <ul>
+                                <li><strong>Technologies Used:</strong> Power Automate, SharePoint, Azure Cloud, Kubernetes, C#, MVC, SQL Server, Power BI.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Elderly Health Care Platform:</strong> Developed a cutting-edge health monitoring and assistance platform tailored for elderly care.
+                            <ul>
+                                <li><strong>Technologies Used:</strong> Azure IoT, Cloud Services, C#, MVC, Web Farm, Power BI, Power Apps, SQL Server.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Water Quality Monitoring System for Canadian Government:</strong> Created an advanced system for efficient monitoring and management of environmental water quality.
+                            <ul>
+                                <li><strong>Technologies Used:</strong> Azure Cloud Services, Kubernetes, C#, MVC, SQL Server, Power BI, Power Automate, SharePoint.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Alumni Engagement Website:</strong> Fostered a vibrant community by enabling ex-employees to reconnect with colleagues and the company.
+                            <ul>
+                                <li><strong>Technologies Used:</strong> ASP.NET MVC, Azure Web Apps, SQL Server, Power BI, VBA, Access, Power Automate, SharePoint.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Request Management System:</strong> Streamlined and enhanced the efficiency of internal request handling and tracking processes.
+                            <ul>
+                                <li><strong>Technologies Used:</strong> Power Apps, Power Automate, C#, MVC, SQL Server, Azure Functions, Kubernetes, SharePoint.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Migration Scheduler and Accelerator Wizard:</strong> Pioneered a bespoke guide for seamless cloud integration, optimizing system performance and enhancing security compliance.
+                            <ul>
+                                <li><strong>Technologies Used:</strong> Azure Cloud Services, Kubernetes, C# Core API, MVC, SQL Server, Power BI, Power Automate, SharePoint.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>FixIt Self-Healing Tool:</strong> Engineered an innovative automated tool for proactive resolution of IT infrastructure issues.
+                            <ul>
+                                <li><strong>Technologies Used:</strong> Power Automate, Azure Functions, C#, .NET Core, MVC, SQL Server, Azure SQL Database, Power BI, Kubernetes, Web Farm, SharePoint.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </li>
+        </ul>
+
+        <!-- Education -->
+        <h2 class="section-title" id="education"><i class="fas fa-graduation-cap"></i> Education</h2>
+        <ul>
+            <li><strong>M.Sc. in Computer Science</strong>, Punjab Technical University (PTU), 2012</li>
+            <li><strong>MCA in Computers</strong>, Punjab Technical University (PTU), 2012</li>
+            <li><strong>B.Sc. in Zoology</strong>, Patna University, 2005</li>
+        </ul>
+
+        <!-- Languages -->
+        <h2 class="section-title" id="languages"><i class="fas fa-language"></i> Languages</h2>
+        <p>English, Hindi, Urdu, Learning French</p>
+
+        <!-- Interests -->
+        <h2 class="section-title" id="interests"><i class="fas fa-heart"></i> Personal Interests</h2>
+        <p>
+            <i class="fas fa-badminton"></i> Badminton &nbsp;
+            <i class="fas fa-spa"></i> Tai Chi &nbsp;
+            <i class="fas fa-brain"></i> Continuous Learning & Automation
+        </p>
+
+        <!-- Personal Details -->
+        <h2 class="section-title" id="personal-details"><i class="fas fa-info-circle"></i> Personal Details</h2>
+        <p>
+            <strong>Date of Birth:</strong> July 06, 1980<br>
+            <strong>Sports:</strong> Badminton, Tai Chi
+        </p>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Md Ali Jaffry | <a href="mailto:mjaffry02@gmail.com">mjaffry02@gmail.com</a> | +91 9810976296</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+</body>
+</html>
